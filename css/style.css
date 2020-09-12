@@ -1,0 +1,326 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+font-family: Arial, sans-serif;
+line-height: 1.4;
+color: #eef4f2;
+overflow-x: hidden;
+}
+
+.container{
+
+	max-width: 1100px;
+	margin: auto;
+}
+
+
+.text-primary{
+	color: #f877d0;
+}
+
+#btn{
+border-color: #f877d0; 
+}
+
+
+#navbar{
+	display: flex;
+	justify-content: space-between;
+	background: #333;
+	color: #fff;	
+	padding: 0.1rem 5rem;
+	position: sticky;
+	top: 0;
+	border-bottom: 3px solid #f877d0;
+}
+
+#navbar ul{
+display: flex;
+align-items: center;
+list-style: none;
+}
+
+#navbar h2 a{
+line-height: 3;
+color: #fff;
+text-decoration: none;
+}
+
+#navbar li a{
+text-decoration: none;
+color: #fff;
+padding: 1rem;
+font-size: 1.3rem;
+margin: 0 0.5rem;
+border-radius: 5px;
+} 
+
+#navbar li a:hover {
+background-color: #fcb3e6;
+}
+
+#mainpage{
+	background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../images/logo.jpg) no-repeat left center;
+	height: 110vh;
+	margin-left: 5rem
+	border-bottom: 3px solid #f877d0;
+	border-bottom: 3px solid #f877d0;
+
+}
+
+.mainpage-content{
+	display: flex;
+	flex-direction: column;
+	text-align: right;
+	align-items: right;
+	justify-content: right;
+	position: absolute;
+	font-size: 2rem;
+	top: 81px;
+	left: 0;
+	bottom: 0;
+	right: 0;
+	color: #2e1f2e;
+
+}
+
+.mainpage-content h1{
+	font-size: 3rem;
+	text-align: right;
+	align-items: right;
+	/*justify-content: right;*/
+	position: absolute;
+	align-items: left;
+font-family: 'Shadows Into Light', cursive;
+/*font-family: "Tangerine", serif;*/
+	padding: 2rem 10rem;
+	color: #2e1f2e;
+ animation: animate 5s infinite;
+}
+
+@keyframes animate{
+  from {left: 600px;}
+  to {left: 750px;}
+}
+
+.mainpage-content .btn{
+	margin-top: 8rem;
+	margin-left: 600px;
+	font-size: 2rem;
+	padding: 0.5rem 1rem;
+	text-align: right;
+	align-items: left;
+	justify-content: right;
+	text-decoration:none;
+	font-family: 'Indie Flower', cursive;	
+}
+
+
+.btn{
+	color: #6d6370;
+	text-decoration: none;
+	display: inline-block;
+	padding: 1rem 1rem;
+	border: 1px solid #f877d0;
+	border-radius: 10px;
+	font-weight: bold;
+	text-align: right;
+	align-items: left;
+	justify-content: right;
+}
+
+#about{
+	padding:5rem 0;
+	color: black;
+	background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../images/bac.jpg) no-repeat center center;
+	height: 90vh;
+	border-bottom: 3px solid #f877d0;
+	margin-bottom: 1px;
+}
+
+#about h1{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	margin-top: 0.5rem;
+}
+
+#about h3{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	margin-left: 2rem;
+}
+
+#about p.lead{
+	font-size: 1.5rem;
+	margin-bottom: 2rem;
+	margin-left: 2rem;
+	justify-content: center;
+	margin-right: 1rem;
+}
+
+#about .about-content{
+	display: flex;
+}
+
+#about .about-text
+{
+	flex: 1;
+
+}
+
+#about .about-text{
+	text-align: justify;
+}
+
+#about .about-image img{
+	display: block;
+	margin-right: auto;
+	width: 100%;		
+	margin-left: 1px;
+	margin-bottom: 3px;
+}
+
+#project{
+	padding:5rem 0;
+	color: black;
+	background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../images/bac.jpg) no-repeat center center;
+	height: 90vh;
+	border-bottom: 3px solid #f877d0;
+	margin-bottom: 3px;
+}
+
+
+#project h1{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 5rem;
+	margin-top: 0.5rem;
+}
+
+#project.card h1{
+	text-align: center;
+	font-size: 2rem;
+	margin-bottom: 4rem;
+	margin-top: 0.5rem;
+}
+.card{
+	padding: 4rem 1rem;
+	margin-left: 4rem;
+	font-size: 1.5rem;
+	background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../images/bac1.jpg) no-repeat center center;
+	position: relative;
+	animation: an2 5s infinite;
+	animation-timing-function: ease-in-out;
+}
+
+@keyframes an2{
+  from {left: 00px;}
+  to {left: 200px;}
+}
+.card img{
+		display: block;
+	margin-right: auto;
+	width: 40%;
+	border-radius: 20%; 
+	margin-left: 90px;
+	position: absolute;
+	top:-3rem;
+	background: rgba(0,0,0,0.5);
+}
+
+#project.card  h3{
+	font-size: 2rem;
+	margin-bottom: 1rem;
+	margin-left: 4rem;
+	margin-right: 4rem;	
+}
+
+#project .card-wrapper{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+}
+
+
+#skills{
+	padding: 5rem 0;
+	color: black;
+	background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../images/bac.jpg) no-repeat center center;
+	height: 90vh;
+	border-bottom: 3px solid #f877d0;
+	margin-bottom: 3px;
+}
+
+#skills h1{
+	text-align: center;
+	font-size: 3rem;
+	margin-bottom: 5rem;
+	margin-top: 0.5rem;
+}
+
+#skills .skilllist{
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	grid-column-gap: 2rem;
+}
+.card1{
+	padding: 4rem 1rem;
+	margin-left: 4rem;
+	font-size: 1.5rem;
+	background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../images/card1.jpg) no-repeat center center;
+	position: relative;
+}
+
+#skills .skilllist.card1 h2{
+	font-size: 2rem;
+	margin-bottom: 2rem;
+	margin-left: 4rem;
+	margin-right: 4rem;	
+	color: #eef4f2;
+}
+
+#contact{
+	padding: 5rem 0;
+	color: black;
+	background: linear-gradient(rgba(0,0,0,0.0),rgba(0,0,0,0.0)),url(../images/bac.jpg) no-repeat center center;
+	height: 90vh;
+	border-bottom: 3px solid #f877d0;
+}
+
+#contact h1{
+	font-size: 3rem;
+	margin-bottom: 5rem;
+	margin-top: 0.5rem;
+	text-align: center;
+	text-decoration:underline solid #f877d0 ;
+}
+
+#contact .card-wrapper{
+	display: grid;
+	grid-template-columns: repeat(3,1fr);
+}
+
+#contact .card-wrapper{
+	text-align: center;
+}
+
+#contact h2{
+	font-size: 2rem;
+}
+
+#contact h6{
+	font-size: 1.5rem;
+	text-decoration: none;	
+}
+
+#contact h6 a{
+	font-size: 1.5rem;
+	color: black;
+	text-decoration: none;	
+}
